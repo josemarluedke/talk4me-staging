@@ -9,9 +9,12 @@ head
   meta[property="og:title"        content="talk4me"]
   meta[property="og:url"          content="http://talk4me.in"]
   meta[property="og:description"  content="create and share your event and find awesome topics to present."]
+  = render 'layouts/social_sdks'
+  = render 'layouts/analytics'
 body
   .container
-    .logo
-      = link_to "", :root
-      h1 talk4me.in
+    = render 'layouts/header'
+    hr
     = yield
+  .contact
+    = mail_to "what@talk4me.in"
