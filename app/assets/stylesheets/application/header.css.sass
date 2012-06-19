@@ -1,0 +1,67 @@
+header
+  .logo
+    a
+      background:  image-url('talk4me-logo.png')
+      width: 171px
+      height: 119px
+      display: block
+    h1
+      visibility: hidden
+      display: none
+
+body#home
+  header
+    margin-top: 55px
+    .logo
+      a
+        background:  image-url('talk4me-logo-big.png')
+        width: 300px
+        height: 196px
+    .text
+      font-family: "pontanosans", "verdana"
+      font-size: 28px
+      line-height: 35px
+      color: $brow
+    .apps
+      margin-top: 50px
+      .app
+        width: 260px
+        height: 95px
+        background: rgba(#CCCCCC, 0.2)
+        float: left
+        +border-radius(4px)
+        div
+          background: image-url('apps.png') no-repeat
+          float: left
+        &.iphone
+          margin-right: 40px
+          div
+            width: 38px
+            height: 74px
+            margin-top: 9px
+            margin-left: 18px
+        &.android
+          div
+            width: 59px
+            height: 68px
+            background-position: -48px 0
+            margin-top: 11px
+            margin-left: 14px
+          p
+            margin-left: 14px
+        p
+          width: 165px
+          margin-left: 17px
+          margin-top: 15px
+          float: left
+          font-family: "oxygen", "verdana"
+          font-size: 24px
+          line-height: 30px
+          text-align: center
+          a
+            color: $silver
+            text-decoration: none
+          b
+            font-family: "magra", "verdana"
+            text-transform: uppercase
+            font-weight: bold
